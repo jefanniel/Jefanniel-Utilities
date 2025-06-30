@@ -30,14 +30,14 @@ client.once('ready', () => {
   console.log(`🤖 Bot aktif sebagai ${client.user.tag}`);
 
   const activities = [
-    { name: 'Jefanniel Assistant 💻', type: 0 },        // Playing
-    { name: 'command kamu 🧠', type: 2 },                // Listening
-    { name: 'server kamu 🔥', type: 3 },                 // Watching
-    { name: 'dengan bug dan error 🐛', type: 0 },
-    { name: '/ping dan /info', type: 2 },
-    { name: 'console.log("Halo Dunia")', type: 0 },
-    { name: 'bot lain crash 😈', type: 3 },
-    { name: 'jefanniel.dev', type: 3 }
+    { name: 'as a Jefanniel Assistant 💻', type: 0 },        // Playing
+    { name: 'as a Software Engineer', type: 0 },
+    { name: 'as a Fullstack Web Dev', type: 0 },
+    { name: 'as a Content Creator', type: 0 },
+    { name: 'as a Digital Artist', type: 0 },
+    { name: 'Giantical Community', type: 3 },                 // Watching
+    { name: '/jefanniel', type: 2 },                          // Listening
+    { name: 'jefanniel.vercel.app', type: 3 }
   ];
 
   let i = 0;
