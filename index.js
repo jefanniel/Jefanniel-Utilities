@@ -36,7 +36,7 @@ client.once('ready', () => {
     { name: 'as a Content Creator', type: 0 },
     { name: 'as a Digital Artist', type: 0 },
     { name: 'Giantical Community', type: 3 },                 // Watching
-    { name: '/jefanniel', type: 2 },                          // Listening
+    { name: '/jefhelp', type: 2 },                          // Listening
     { name: 'jefanniel.vercel.app', type: 3 }
   ];
 
