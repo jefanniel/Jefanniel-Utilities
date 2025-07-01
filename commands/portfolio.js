@@ -12,22 +12,22 @@ export const data = new SlashCommandBuilder()
 export async function execute(interaction) {
   const row = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
-      .setLabel('🌐 Website')
+      .setLabel('Website')
       .setStyle(ButtonStyle.Link)
       .setURL('https://jefanniel.vercel.app'),
 
     new ButtonBuilder()
-      .setLabel('🐙 GitHub')
+      .setLabel('GitHub')
       .setStyle(ButtonStyle.Link)
       .setURL('https://github.com/jefanniel'),
 
     new ButtonBuilder()
-      .setLabel('🎥 YouTube')
+      .setLabel('YouTube')
       .setStyle(ButtonStyle.Link)
       .setURL('https://youtube.com/@jefanniel'),
 
     new ButtonBuilder()
-      .setLabel('🎬 TikTok')
+      .setLabel('TikTok')
       .setStyle(ButtonStyle.Link)
       .setURL('https://tiktok.com/@jefanniel')
   );
@@ -38,7 +38,7 @@ export async function execute(interaction) {
       description: "Explore a curated selection of my work in software development and visual content creation.",
       fields: [
         {
-          name: '💻 Dev Works',
+          name: 'Dev Works',
           value: [
             'Website: [jefanniel.vercel.app](https://jefanniel.vercel.app)',
             'GitHub: [github.com/jefanniel](https://github.com/jefanniel)',
@@ -46,7 +46,7 @@ export async function execute(interaction) {
           ].join('\n')
         },
         {
-          name: '📸 Creative Works',
+          name: 'Creative Works',
           value: [
             'YouTube: [@jefanniel](https://youtube.com/@jefanniel)',
             'TikTok: [@jefanniel](https://tiktok.com/@jefanniel)',

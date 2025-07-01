@@ -7,18 +7,18 @@ export const data = new SlashCommandBuilder()
 export async function execute(interaction) {
   await interaction.reply({
     embeds: [{
-      title: "👤 About Jefanniel",
+      title: "About Jefanniel",
       description: "Hi there, I’m **Jefanniel** — a software engineer, content creator, and digital artist based in Indonesia.",
       fields: [
         { name: "Website", value: "[jefanniel.vercel.app](https://jefanniel.vercel.app)" },
         { name: "Location", value: "Jakarta, Indonesia", inline: true },
         { name: "Education", value: "Computer Science, Gunadarma University (starting August 2025)", inline: true },
         {
-          name: "💻 Dev Tech Stack",
+          name: "Dev Tech Stack",
           value: "React, React Native, Next.js, Express, MongoDB, MySQL, PostgreSQL"
         },
         {
-          name: "🎨 Creative Tools",
+          name: "Creative Tools",
           value: "Premiere Pro, After Effects, Lightroom, Photoshop, DaVinci Resolve, Clip Studio Paint, Blender"
         }
       ],
