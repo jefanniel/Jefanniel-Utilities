@@ -19,7 +19,7 @@ export async function execute(interaction) {
     new ButtonBuilder()
       .setLabel('TikTok')
       .setStyle(ButtonStyle.Link)
-      .setURL('https://tiktok.com/@jefcreate'),
+      .setURL('https://tiktok.com/@jefanniel'),
 
     new ButtonBuilder()
       .setLabel('GitHub')

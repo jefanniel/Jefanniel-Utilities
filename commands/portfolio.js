@@ -40,7 +40,7 @@ export async function execute(interaction) {
         {
           name: 'Dev Works',
           value: [
-            'Website: [jefanniel.vercel.app](https://jefanniel.vercel.app)',
+            'Website: [jefanniel.com](https://jefanniel.vercel.app)',
             'GitHub: [github.com/jefanniel](https://github.com/jefanniel)',
             'Experimental: [codepen.io/jefanniel](https://codepen.io/jefanniel)'
           ].join('\n')

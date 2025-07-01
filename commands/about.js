@@ -10,7 +10,7 @@ export async function execute(interaction) {
       title: "About Jefanniel",
       description: "Hi there, I’m **Jefanniel** — a software engineer, content creator, and digital artist based in Indonesia.",
       fields: [
-        { name: "Website", value: "[jefanniel.vercel.app](https://jefanniel.vercel.app)" },
+        { name: "Website", value: "[jefanniel.com](https://jefanniel.vercel.app)" },
         { name: "Location", value: "Jakarta, Indonesia", inline: true },
         { name: "Education", value: "Computer Science, Gunadarma University (starting August 2025)", inline: true },
         {
