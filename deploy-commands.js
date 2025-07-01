@@ -26,7 +26,7 @@ const rest = new REST({ version: '10' }).setToken(TOKEN);
       Routes.applicationCommands(CLIENT_ID), // deploy global
       { body: commands }
     );
-    console.log('✅ Slash command global berhasil didaftarkan! (Butuh waktu ±1 jam untuk muncul)');
+    console.log('✅ Slash command global berhasil didaftarkan!');
   } catch (err) {
     console.error('❌ Gagal daftar command:', err);
   }
