@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import 'dotenv/config';
 
-const { CLIENT_ID, GUILD_ID, TOKEN } = process.env;
+const { CLIENT_ID, TOKEN } = process.env;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const commands = [];
@@ -19,10 +19,15 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
-try {
-  console.log('📦 Mengirim slash command...');
-  await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands });
-  console.log('✅ Slash command berhasil didaftarkan!');
-} catch (err) {
-  console.error('❌ Gagal daftar command:', err);
-}
+(async () => {
+  try {
+    console.log('📦 Mengirim global slash command...');
+    await rest.put(
+      Routes.applicationCommands(CLIENT_ID), // deploy global
+      { body: commands }
+    );
+    console.log('✅ Slash command global berhasil didaftarkan! (Butuh waktu ±1 jam untuk muncul)');
+  } catch (err) {
+    console.error('❌ Gagal daftar command:', err);
+  }
+})();
