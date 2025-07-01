@@ -34,24 +34,24 @@ export async function execute(interaction) {
 
   await interaction.reply({
     embeds: [{
-      title: "🎨 Jefanniel's Portfolio",
+      title: "Jefanniel's Portfolio",
       description: "Explore a curated selection of my work in software development and visual content creation.",
       fields: [
         {
           name: '💻 Dev Works',
           value: [
-            '🌐 Website: [jefanniel.vercel.app](https://jefanniel.vercel.app)',
-            '🐙 GitHub: [github.com/jefanniel](https://github.com/jefanniel)',
-            '🧪 Experimental: [codepen.io/jefanniel](https://codepen.io/jefanniel)'
+            'Website: [jefanniel.vercel.app](https://jefanniel.vercel.app)',
+            'GitHub: [github.com/jefanniel](https://github.com/jefanniel)',
+            'Experimental: [codepen.io/jefanniel](https://codepen.io/jefanniel)'
           ].join('\n')
         },
         {
           name: '📸 Creative Works',
           value: [
-            '🎥 YouTube: [@jefanniel](https://youtube.com/@jefanniel)',
-            '🎬 TikTok: [@jefanniel](https://tiktok.com/@jefanniel)',
-            '📷 Instagram (Photo): [@shotbyjefa](https://instagram.com/shotbyjefa)',
-            '🎨 Instagram (Art): [@masjefa](https://instagram.com/masjefa)'
+            'YouTube: [@jefanniel](https://youtube.com/@jefanniel)',
+            'TikTok: [@jefanniel](https://tiktok.com/@jefanniel)',
+            'Instagram (Photo): [@shotbyjefa](https://instagram.com/shotbyjefa)',
+            'Instagram (Art): [@masjefa](https://instagram.com/masjefa)'
           ].join('\n')
         }
       ],

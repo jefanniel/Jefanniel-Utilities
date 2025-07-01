@@ -16,12 +16,10 @@ export async function execute(interaction) {
         color: 0x5865F2,
         fields: [
           { name: '📛 Bot Name', value: interaction.client.user.username, inline: true },
-          { name: '⏱️ Uptime', value: `${uptimeStr}`, inline: true },
           { name: '👨‍💻 Developer', value: 'Jefanniel', inline: true },
-          { name: '🧠 Tech Stack', value: 'Node.js, discord.js v14, Hosted on Replit' },
         ],
         footer: {
-          text: `Running on Node.js ${process.version} • ${os.type()} ${os.arch()}`
+          text: "Crafted by Jefanniel — Full-Stack Developer & Content Creator" ,
         },
         timestamp: new Date().toISOString()
       }

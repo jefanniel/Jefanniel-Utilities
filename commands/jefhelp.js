@@ -8,7 +8,7 @@ export async function execute(interaction) {
   await interaction.reply({
     embeds: [
       {
-        title: '📖 Help Menu — Jefanniel Bot',
+        title: '📖 Help Menu',
         description: 'Here are the available commands you can use:',
         fields: [
           {

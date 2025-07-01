@@ -7,22 +7,22 @@ export const data = new SlashCommandBuilder()
 export async function execute(interaction) {
   const row = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
-      .setLabel('📸 Instagram')
+      .setLabel('Instagram')
       .setStyle(ButtonStyle.Link)
       .setURL('https://instagram.com/jefanniel'),
 
     new ButtonBuilder()
-      .setLabel('🎥 YouTube')
+      .setLabel('YouTube')
       .setStyle(ButtonStyle.Link)
       .setURL('https://www.youtube.com/@jefanniel'),
 
     new ButtonBuilder()
-      .setLabel('🎬 TikTok')
+      .setLabel('TikTok')
       .setStyle(ButtonStyle.Link)
       .setURL('https://tiktok.com/@jefcreate'),
 
     new ButtonBuilder()
-      .setLabel('🐙 GitHub')
+      .setLabel('GitHub')
       .setStyle(ButtonStyle.Link)
       .setURL('https://github.com/jefanniel')
   );
