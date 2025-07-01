@@ -32,12 +32,10 @@ client.once('ready', () => {
   const activities = [
     { name: 'as a Jefanniel Assistant 💻', type: 0 },        // Playing
     { name: 'as a Software Engineer', type: 0 },
-    { name: 'as a Fullstack Web Dev', type: 0 },
     { name: 'as a Content Creator', type: 0 },
     { name: 'as a Digital Artist', type: 0 },
-    { name: 'Giantical Community', type: 3 },                 // Watching
+    //{ name: 'Giantical Community', type: 3 },                 // Watching
     { name: '/jefhelp', type: 2 },                          // Listening
-    { name: 'jefanniel.vercel.app', type: 3 }
   ];
 
   let i = 0;
@@ -45,7 +43,7 @@ client.once('ready', () => {
     const activity = activities[i % activities.length];
     client.user.setPresence({ activities: [activity], status: 'online' });
     i++;
-  }, 10000); // ganti tiap 10 detik
+  }, 7000); // ganti tiap 10 detik
 });
 
 client.on('interactionCreate', async interaction => {
