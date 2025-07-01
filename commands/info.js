@@ -12,14 +12,14 @@ export async function execute(interaction) {
   await interaction.reply({
     embeds: [
       {
-        title: '🤖 Bot Information',
+        title: 'Bot Information',
         color: 0x5865F2,
         fields: [
-          { name: '📛 Bot Name', value: interaction.client.user.username, inline: true },
-          { name: '👨‍💻 Developer', value: 'Jefanniel', inline: true },
+          { name: 'Bot Name', value: interaction.client.user.username, inline: true },
+          { name: 'Developer', value: 'Jefanniel', inline: true },
         ],
         footer: {
-          text: "Crafted by Jefanniel — Full-Stack Developer & Content Creator" ,
+          text: "Developed by Jefanniel" ,
         },
         timestamp: new Date().toISOString()
       }

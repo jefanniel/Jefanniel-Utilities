@@ -8,7 +8,7 @@ export async function execute(interaction) {
   await interaction.reply({
     embeds: [{
       title: "👤 About Jefanniel",
-      description: "Hi, I’m **Jefanniel** — a full-stack web developer, software engineer, content creator, and digital artist based in Indonesia.",
+      description: "Hi there, I’m **Jefanniel** — a software engineer, content creator, and digital artist based in Indonesia.",
       fields: [
         { name: "Website", value: "[jefanniel.vercel.app](https://jefanniel.vercel.app)" },
         { name: "Location", value: "Jakarta, Indonesia", inline: true },

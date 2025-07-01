@@ -29,11 +29,11 @@ export async function execute(interaction) {
 
   await interaction.reply({
     embeds: [{
-      title: "📬 Contact Jefanniel",
+      title: "Contact Jefanniel",
       description: "For collaborations, inquiries, or professional connections, feel free to reach out via the following platforms.",
       fields: [
-        { name: "📧 Email", value: "`jefanniel.business@gmail.com`" },
-        { name: "💬 Discord", value: "`@jefanniel`" }
+        { name: "Email", value: "`jefanniel.business@gmail.com`" },
+        { name: "Discord", value: "`@jefanniel`" }
       ],
       color: 0x1ABC9C,
       footer: { text: "Available for freelance, creative projects, and partnerships" },

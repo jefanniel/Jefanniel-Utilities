@@ -56,7 +56,7 @@ export async function execute(interaction) {
         }
       ],
       color: 0x9B59B6,
-      footer: { text: "Crafted by Jefanniel — Full-Stack Developer & Content Creator" },
+      footer: { text: "Crafted by Jefanniel" },
       timestamp: new Date().toISOString()
     }],
     components: [row]

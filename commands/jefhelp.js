@@ -8,11 +8,11 @@ export async function execute(interaction) {
   await interaction.reply({
     embeds: [
       {
-        title: '📖 Help Menu',
+        title: 'Help Menu',
         description: 'Here are the available commands you can use:',
         fields: [
           {
-            name: '🧠 General',
+            name: 'General',
             value: [
               '`/about` — About Jefanniel and background',
               '`/contact` — Business inquiries and contact links',
@@ -21,7 +21,7 @@ export async function execute(interaction) {
             ].join('\n')
           },
           {
-            name: '⚙️ Utility & More',
+            name: 'Utility & More',
             value: 'More features will be added soon. Stay tuned!'
           }
         ],
