@@ -12,7 +12,7 @@ export async function execute(interaction) {
       fields: [
         { name: "🌐 Website", value: "[jefanniel.vercel.app](https://jefanniel.vercel.app)" },
         { name: "📍 Location", value: "Jakarta, Indonesia", inline: true },
-        { name: "🎓 Education", value: "Informatics, Gunadarma University (starting August 2025)", inline: true },
+        { name: "🎓 Education", value: "Computer Science, Gunadarma University (starting August 2025)", inline: true },
         {
           name: "💻 Dev Tech Stack",
           value: "React, React Native, Next.js, Express, MongoDB, MySQL, PostgreSQL"
