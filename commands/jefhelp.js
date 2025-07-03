@@ -1,7 +1,7 @@
 import { SlashCommandBuilder } from 'discord.js';
 
 export const data = new SlashCommandBuilder()
-  .setName('jefhelp')
+  .setName('h')
   .setDescription('View all available commands and how to use them');
 
 export async function execute(interaction) {
@@ -14,10 +14,10 @@ export async function execute(interaction) {
           {
             name: 'General',
             value: [
+              '`/info` — Bot status and developer info',
               '`/about` — About Jefanniel and background',
               '`/contact` — Business inquiries and contact links',
-              '`/portfolio` — Showcase of dev & creative works',
-              '`/info` — Bot status and developer info',
+              '`/portfolio` — Showcase of dev and creative works',
             ].join('\n')
           },
           {
