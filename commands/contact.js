@@ -35,7 +35,7 @@ export async function execute(interaction) {
         { name: "Email", value: "`jefanniel.business@gmail.com`" },
         { name: "Discord", value: "`@jefanniel`" }
       ],
-      color: 0x017301 ,
+      color: 0x017301,
       footer: { text: "Available for freelance, creative projects, and partnerships" },
       timestamp: new Date().toISOString()
     }],
