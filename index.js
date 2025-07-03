@@ -36,8 +36,8 @@ client.once('ready', () => {
   console.log(`🤖 Bot aktif sebagai ${client.user.tag}`);
 
   const customStatuses = [
-    "Hi, there. I'm Jefanniel Assistant",
-    "Type /h to get started",
+    "I'm Jefanniel's assistant bot",
+    "Use /h to get started",
     "Developed by @jefanniel"
   ];
 
@@ -48,15 +48,26 @@ client.once('ready', () => {
         name: customStatuses[i % customStatuses.length],
         type: ActivityType.Custom,
         state: customStatuses[i % customStatuses.length],
+        // emoji: { name: "💻" } // optional emoji
       }],
       status: 'online'
     });
     i++;
-  }, 3000);
+  }, 3000); // Ganti status tiap 3 detik
 });
 
 client.on('interactionCreate', async interaction => {
   if (!interaction.isChatInputCommand()) return;
+
+  const allowedChannelId = '1389246671485009950'; // #talk-to-jefanniel
+  const allowedUserId = '598802827590238208'; // kamu
+
+  if (interaction.channelId !== allowedChannelId && interaction.user.id !== allowedUserId) {
+    return await interaction.reply({
+      content: `❌ Command ini hanya bisa digunakan di <#${allowedChannelId}>.`,
+      ephemeral: true
+    });
+  }
 
   const command = client.commands.get(interaction.commandName);
   if (!command) return;
@@ -65,6 +76,9 @@ client.on('interactionCreate', async interaction => {
     await command.execute(interaction);
   } catch (err) {
     console.error(err);
-    await interaction.reply({ content: '❌ Terjadi kesalahan.', ephemeral: true });
+    await interaction.reply({
+      content: '❌ Terjadi kesalahan saat menjalankan command.',
+      ephemeral: true
+    });
   }
 });
