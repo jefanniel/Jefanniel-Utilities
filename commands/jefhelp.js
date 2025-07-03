@@ -1,7 +1,7 @@
 import { SlashCommandBuilder } from 'discord.js';
 
 export const data = new SlashCommandBuilder()
-  .setName('h')
+  .setName('help')
   .setDescription('View all available commands and how to use them');
 
 export async function execute(interaction) {
