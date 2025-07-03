@@ -22,7 +22,7 @@ export async function execute(interaction) {
           value: "Premiere Pro, After Effects, Lightroom, Photoshop, DaVinci Resolve, Clip Studio Paint, Blender"
         }
       ],
-      color: 0x00FF00,
+      color: 0x017301,
       footer: { text: "Open for collaboration & creative projects" },
       timestamp: new Date().toISOString()
     }]

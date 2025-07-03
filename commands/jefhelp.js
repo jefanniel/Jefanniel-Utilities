@@ -25,7 +25,7 @@ export async function execute(interaction) {
             value: 'More features will be added soon. Stay tuned!'
           }
         ],
-        color: 0x00FF00,
+        color: 0x017301,
         footer: { text: 'Need help? Reach out to @jefanniel on Discord' },
         timestamp: new Date().toISOString()
       }
