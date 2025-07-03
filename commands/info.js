@@ -13,7 +13,7 @@ export async function execute(interaction) {
     embeds: [
       {
         title: 'Bot Information',
-        color: 0x5865F2,
+        color: 0x00FF00,
         fields: [
           { name: 'Bot Name', value: interaction.client.user.username, inline: true },
           { name: 'Developer', value: 'Jefanniel', inline: true },

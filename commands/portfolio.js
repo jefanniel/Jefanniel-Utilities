@@ -55,7 +55,7 @@ export async function execute(interaction) {
           ].join('\n')
         }
       ],
-      color: 0x9B59B6,
+      color: 0x00FF00,
       footer: { text: "Crafted by Jefanniel" },
       timestamp: new Date().toISOString()
     }],
